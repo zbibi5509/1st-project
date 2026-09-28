@@ -453,62 +453,52 @@ className="w-full h-full"/>
 
       {/* ================= OUR STORY ================= */}
 
-      <section className="bg-[#F6EFE7] py-20 px-6 pl-17">
+      
+<section className="bg-[#F6EFE7] py-14 sm:py-16 md:py-20 px-5 sm:px-6">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 sm:gap-12 lg:gap-20">
 
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-23">
+    {/* IMAGE */}
+    <div className="w-full md:w-[42%] h-[55vh] sm:h-[65vh] md:h-[70vh] lg:h-[75vh] overflow-hidden rounded-[30px] sm:rounded-[35px] md:rounded-[40px]">
+      <img
+        src={fashion}
+        alt="Our Story"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-          {/* IMAGE */}
+    {/* TEXT */}
+    <div className="w-full md:w-[50%] text-center md:text-left">
+      <p className="text-xs sm:text-sm tracking-[3px] sm:tracking-[4px] uppercase text-[#A56F55]">
+        Our Story
+      </p>
 
-          <div className="h-[80vh] w-full md:w-[40%] overflow-hidden rounded-[40px]">
+      <h2 className="mt-3 sm:mt-4 text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-[#4A3830]">
+        Style Made Simple
+      </h2>
 
-            <img
-              src={fashion}
-              alt="Our Story"
-              className="w-full h-full object-cover"
-            />
+      <p className="mt-5 sm:mt-6 leading-7 sm:leading-8 text-sm sm:text-base text-[#806B5D]">
+        We believe shopping should feel simple, inspiring and
+        enjoyable. Our collection brings together timeless
+        pieces that fit naturally into everyday life.
+      </p>
 
-          </div>
+      <p className="mt-4 leading-7 sm:leading-8 text-sm sm:text-base text-[#806B5D]">
+        From everyday essentials to thoughtful accessories,
+        every product is selected with style, comfort and
+        quality in mind.
+      </p>
 
+      <div className="mt-6 sm:mt-7 flex items-center justify-center md:justify-start gap-3 text-[#8F5D45]">
+        <FaHeart />
+        <span className="text-sm font-medium">
+          Made with care
+        </span>
+      </div>
+    </div>
 
-          {/* TEXT */}
+  </div>
+</section>
 
-          <div className="w-full md:w-[50%]">
-
-            <p className="text-sm tracking-[4px] uppercase text-[#A56F55]">
-              Our Story
-            </p>
-
-            <h2 className="mt-4 text-4xl md:text-5xl font-semibold text-[#4A3830]">
-              Style Made Simple
-            </h2>
-
-            <p className="mt-6 leading-8 text-[#806B5D]">
-              We believe shopping should feel simple, inspiring and
-              enjoyable. Our collection brings together timeless
-              pieces that fit naturally into everyday life.
-            </p>
-
-            <p className="mt-4 leading-8 text-[#806B5D]">
-              From everyday essentials to thoughtful accessories,
-              every product is selected with style, comfort and
-              quality in mind.
-            </p>
-
-            <div className="mt-7 flex items-center gap-3 text-[#8F5D45]">
-
-              <FaHeart />
-
-              <span className="text-sm font-medium">
-                Made with care
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
 
     </>
   )
